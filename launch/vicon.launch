@@ -4,6 +4,7 @@
 
 <!-- IP and port on Vicon Windows PC -->
 <arg name="datastream_hostport" default="192.168.0.232"/>
+<!-- <arg name="datastream_hostport" default="192.168.10.1"/> -->
 <!-- Fixed vicon world frame -->
 <arg name="frame_id" default="map"/>
 <!-- Msg types available:
@@ -22,10 +23,10 @@
 <!-- If we want to specify each object seperately and if we only want to publish specific objects-->
 <arg name="only_use_object_specific" default="true"/>
 
-<arg name="object_names" default="[falcon1]"/>
+<arg name="object_names" default="[liming]"/>
 <arg name="object_msg_types" default="[geometry_msgs/PoseStamped]"/>
 <arg name="object_frame_ids" default="[map]"/>
-<arg name="object_publish_topics" default="[/mocap/falcon1/pose]"/>
+<arg name="object_publish_topics" default="[/mocap/liming/pose]"/>
 <arg name="object_frequency_divider" default="[1]"/>
 
 <arg name="load_calibration_data" default="true"/>

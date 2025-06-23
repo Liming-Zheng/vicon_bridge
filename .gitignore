@@ -1,1 +1,4 @@
-/calibrations
+build/
+.catkin_tools/
+devel/
+logs/

@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
     tf
     diagnostic_updater
     rospy
+    std_msgs
 )
 
 find_package(Boost REQUIRED COMPONENTS thread date_time)
@@ -60,6 +61,7 @@ target_link_libraries(vicon_sdk PUBLIC ${Boost_LIBRARIES})
 
 add_executable(vicon_bridge
     src/vicon_bridge.cpp
+    scripts/aoa_estimator_node.py
 )
 target_link_libraries(vicon_bridge
     vicon_sdk
